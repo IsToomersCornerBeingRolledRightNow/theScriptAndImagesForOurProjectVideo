@@ -92,6 +92,7 @@ to identify where further typical data points are expected to be
 positioned.
 
 *Plane of least cubes regression*
+<!-- change slide title to "Principle Component Analysis" ~Daniel  -->
 
 This technique may be generalized to three dimensions, and higher.
 And that's a good thing, because a 400-by-300 pixel photograph is essentially
@@ -105,11 +106,14 @@ capturing what you could call "average" states of the web cam feed.
 This is an average image of Toomer's corner generated from our algorithm,
 at least for a certain time of day. It's computationally difficult to
 generate these; however, we only need to do this every so often.
+<!-- This whole slide is redundant, you already state in the above slide that PCA generates a hyperplane of "typical" or "average" images. You might mention that our new image analysis algorithm measures the distance of an image from a (pregenerated) hyperplane of typical images. It might be notable that PCA is already used in computer facial-recognition algorithms ~Daniel -->
+
 
 *Photoshopped image of Toomer's Corner with dinosaurs*
 
 Using this hyperplane storing average days at Toomer's Corner, we're able
 to identify any... not-so-average scenes.
+<!-- the hyperplane doesn't store average days, it characterizes images as being "typical" or not ~Daniel -->
 
 *Photoshopped image of Toomer's Corner with police cars and barricades*
 
@@ -118,6 +122,7 @@ as drivers could be alerted to find an alternate route when an intersection
 is likely obstracted with unusual activity. While this application is
 still a prototype, our team is excited as this approach can recognize
 arbitrary strange activity for any video feed.
+<!-- good point, the algorithm detects arbitrary "non-typical" images -->
 
 *Picture of team or website*
 
