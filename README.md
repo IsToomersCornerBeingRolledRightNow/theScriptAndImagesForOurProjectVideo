@@ -91,10 +91,10 @@ two-dimensional space, the line of least squares regression may be used
 to identify where further typical data points are expected to be
 positioned.
 
-*Plane of least cubes regression*
-<!-- change slide title to "Principle Component Analysis" ~Daniel  -->
+*Principle Component Analysis*
 
-This technique may be generalized to three dimensions, and higher.
+This technique may be generalized to three dimensions, and higher,
+known as principle component analysis.
 And that's a good thing, because a 400-by-300 pixel photograph is essentially
 a 120,000-dimensional vector. By using footage of a typical day at
 Toomer's corner, we
@@ -103,26 +103,26 @@ capturing what you could call "average" states of the web cam feed.
 
 *"Average" image of Toomer's Corner*
 
-This is an average image of Toomer's corner generated from our algorithm,
-at least for a certain time of day. It's computationally difficult to
-generate these; however, we only need to do this every so often.
-<!-- This whole slide is redundant, you already state in the above slide that PCA generates a hyperplane of "typical" or "average" images. You might mention that our new image analysis algorithm measures the distance of an image from a (pregenerated) hyperplane of typical images. It might be notable that PCA is already used in computer facial-recognition algorithms ~Daniel -->
-
+This is what our algorithm considers to be one typical
+image of Toomer's corner, but keep in mind that it also considers typical
+photos in all kinds of weather and times of day.
 
 *Photoshopped image of Toomer's Corner with dinosaurs*
 
-Using this hyperplane storing average days at Toomer's Corner, we're able
-to identify any... not-so-average scenes.
-<!-- the hyperplane doesn't store average days, it characterizes images as being "typical" or not ~Daniel -->
+Using this hyperplane characterizing typical photos of Toomer's Corner,
+we're able to identify any... not-so-average scenes, by computing the
+Euclidean distance of a photo from the hyperplane of typical photos.
 
 *Photoshopped image of Toomer's Corner with police cars and barricades*
 
-We believe this technique has applications in analyzing roads and traffic,
-as drivers could be alerted to find an alternate route when an intersection
-is likely obstracted with unusual activity. While this application is
+PCA is used in facial recognition techniques, but we see it being used
+in reverse here: by registering when a photo of an intersection does *not*
+look familar to the algorithm,
+drivers could be alerted to find an alternate route to avoid
+the unusual activity being observed. While this application is
 still a prototype, our team is excited as this approach can recognize
-arbitrary strange activity for any video feed.
-<!-- good point, the algorithm detects arbitrary "non-typical" images -->
+arbitrary strange activity for any video feed, rather than the specific
+criteria we search for in our production Toomer's Corner analysis.
 
 *Picture of team or website*
 
